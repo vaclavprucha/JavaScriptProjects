@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html lang="cs">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>Evidence pojištěných</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <div class="kontejner">
+    <h1>Evidence pojištěných</h1>
+
+    <form id="formular">
+      <input type="text" id="jmeno" placeholder="Jméno" required>
+      <input type="text" id="prijmeni" placeholder="Příjmení" required>
+      <input type="number" id="vek" placeholder="Věk" required>
+      <input type="tel" id="telefon" placeholder="Telefon" required>
+      <select id="druh">
+        <option value="Životní">Životní</option>
+        <option value="Cestovní">Cestovní</option>
+        <option value="Majetkové">Majetkové</option>
+      </select>
+      <button type="submit">Uložit</button>
+    </form>
+
+    <h2>Seznam pojištěných</h2>
+    <ul id="seznam"></ul>
+  </div>
+
+  <script src="pojisteny.js"></script>
+  <script src="script.js"></script>
+
+</body>
+
+</html>
