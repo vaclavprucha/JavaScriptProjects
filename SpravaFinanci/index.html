@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html lang="cs">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>Správce osobních financí</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <div class="kontejner">
+    <h1>Osobní finance</h1>
+    <div class="stav">
+      <p>Zůstatek: <span id="zustatek">0 Kč</span></p>
+    </div>
+
+    <form id="formular">
+      <input type="text" id="nazev" placeholder="Název transakce" required>
+      <input type="number" id="castka" placeholder="Částka (kladná = příjem, záporná = výdaj)" required>
+      <button type="submit">Přidat transakci</button>
+    </form>
+
+    <div class="filtry">
+      <button onclick="nastavFilter('vse')">Vše</button>
+      <button onclick="nastavFilter('prijem')">Příjmy</button>
+      <button onclick="nastavFilter('vydaj')">Výdaje</button>
+    </div>
+
+    <ul id="seznamTransakci"></ul>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
